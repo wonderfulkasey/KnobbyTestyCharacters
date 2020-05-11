@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Haversack</title>
+
+
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+
+<body>
+<nav>
+          <ul>
+
+            <li><a href="/">Home</a></li>
+            
+            <% if logged_in? %>
+
+              <li><a href="/logout">Logout</a></li>
+
+            <% else %>
+
+              <li><a href="/login">Login</a></li>
+              <li><a href="/signup">Signup</a></li>
+
+            <% end %>
+
+          </ul>
+</nav>
+
+
+</body>
+
+<footer>
+
+  <a href="https://github.com/wonderfulkasey/haversack" class="social-link" target="_blank">
+      Github Repo
+    </a>
+
+    <a href="PUT BLOG LINK HERE" class="social-link" target="_blank">
+      Blog Post
+    </a>
+
+    <a href="PUT YOUTUBE DEMO HERE" class="social-link" target="_blank">
+      Video Demo
+    </a>
+
+</footer>
+
+</html>
