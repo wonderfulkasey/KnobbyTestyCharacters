@@ -1,0 +1,13 @@
+require_relative "spec_helper"
+
+def app
+  app_controller
+end
+
+describe app_controller do
+  it "responds with a welcome message" do
+    get '/'
+    expect(last_response.status).to eq(200)
+    expect(last_response.body).to include("Welcome to the Haversack")
+  end
+end
