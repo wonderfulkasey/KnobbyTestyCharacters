@@ -3,17 +3,26 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'activerecord', :require => 'active_record'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
-gem 'rake', '~>13.0.1'
+gem 'pg', '0.20'
+gem 'dotenv'
+gem 'rake'
 gem 'require_all'
-gem 'sqlite3'
 gem 'thin'
-gem 'shotgun'
-gem 'pry'
 gem 'bcrypt'
-gem "tux"
+gem 'rails_12factor'
+gem 'foreman'
+gem 'session_secret_generator'
+
+group :development do
+  gem 'sqlite3'
+  gem 'shotgun'
+  gem 'pry'
+  gem "tux"
+end
 
 group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'
+#  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 end
