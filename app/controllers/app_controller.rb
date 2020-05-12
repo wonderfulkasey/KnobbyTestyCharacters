@@ -3,7 +3,7 @@ require './config/environment'
 class AppController < Sinatra::Base
 
   before do
-      @title = 'Catchup!'
+      @title = 'Haversack!'
     end
 
   enable :sessions
@@ -20,18 +20,25 @@ class AppController < Sinatra::Base
       set :session_secret, ENV.fetch('SESSION_SECRET') { SecureRandom.hex(64) }
     end
 
-    get '/' do
-      erb :'layout'
+    get "/" do
+      if logged_in?
+        redirect to('/index')
+      else
+        erb :layout
+      end
     end
 
-
     helpers do
-      def logged_in?
-        !!session[:user_id]
-      end
+
 
       def current_user
-        @current_user ||= User.find_by_id(session[:user_id])
+        @current_user ||= User.find(session[:user_id])
       end
+
+      def logged_in?
+           !!session[:user_id]
+         end
+
+
     end
   end
