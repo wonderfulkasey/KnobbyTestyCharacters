@@ -21,7 +21,7 @@ class AppController < Sinatra::Base
     end
 
     get '/' do
-      erb :'index.html'
+      erb :'layout'
     end
 
 
