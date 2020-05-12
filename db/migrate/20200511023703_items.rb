@@ -1,6 +1,5 @@
-class Items < ActiveRecord::Migration[6.0]
+class Items < ActiveRecord::Migration[5.0]
   def change
-    def change
     create_table :items do |t|
       t.string  :title
       t.string  :description
