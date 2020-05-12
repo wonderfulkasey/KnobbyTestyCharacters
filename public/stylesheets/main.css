@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: Sans-Serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   line-height: 18px;
 }
 
@@ -28,14 +28,17 @@ p {
 
 a, a:active {
   color: #4cd958;
+  text-decoration: none;
 }
 
 a:visited {
   color: #5ae079;
+  text-decoration: none;
 }
 
 a:hover {
   color: #17662a;
+  text-decoration: none;
 }
 
 footer {
