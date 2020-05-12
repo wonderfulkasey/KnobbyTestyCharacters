@@ -14,7 +14,7 @@ Right now it is <%= Time.now.strftime('%A') %>.
         <% if item.user_id == @current_user.id %>
 
       <li>
-        <a href="/items/<%= item.title %>"> 
+        <a href="/items/<%= item.title %>">
         belongs to
           <%= item.character %>.</a>
 
@@ -22,7 +22,7 @@ Right now it is <%= Time.now.strftime('%A') %>.
 
           <%= "%.2f" % item.description%>
         </li>
-        
+
 <br></br>
 <% end %>
 <% end %>
