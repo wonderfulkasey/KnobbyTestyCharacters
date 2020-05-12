@@ -4,7 +4,7 @@ ADD VIDEO DEMO ADD BLOG POST
 
 Created With Ruby (current version) Sinatra and Active Records (frameworks) PostgreSQL - The relational database used for production SQLITE3 - The relational database used for development HTML5 and CSS
 
-Usage This app is hosted on Heroku https://catchup-rss.herokuapp.com using the Heroku free plan.
+Usage This app is hosted on Heroku HEROKU APP LINK!!!!!! using the Heroku free plan.
 
 Install Instructions To use this app, just clone, run rake db:migrate and then run shotgun.
 
