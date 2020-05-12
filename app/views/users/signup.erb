@@ -1,4 +1,6 @@
-<h1>Account Sign Up!</h1>
+<section id="signup" class="sessions">
+  <h1>Haversack App Sign Up</h1>
+  <form action="/signup" method="post">
 
 <% if @errors %>
   <% @errors.each do |error| %>
@@ -25,3 +27,4 @@
 
   <input type="submit" value="Sign Up"/>
 </form>
+</section>
